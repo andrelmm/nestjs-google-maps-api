@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  nestjs:
+    build: ./nestjs
+    ports:
+      - 3000:3000
+    volumes:
+      - ./nestjs:/home/node/app

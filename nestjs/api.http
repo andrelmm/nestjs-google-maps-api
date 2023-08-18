@@ -1,0 +1,20 @@
+GET http://localhost:3000/routes
+
+### Create a route
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+{
+    "name": "rota teste",
+    "source_id": "ChIJ3bPNUVPj3JQRCejLuqVrL20",
+    "destination_id": "ChIJHctqVtKcGZURH-mHn6gRMWA"
+}
+
+### Find a place
+GET http://localhost:3000/places?text=curitiba, pr
+
+### Find a place
+GET http://localhost:3000/places?text=porto alegre, rs
+
+### Find directions
+GET http://localhost:3000/directions?origin_id=ChIJ3bPNUVPj3JQRCejLuqVrL20&destination_id=ChIJHctqVtKcGZURH-mHn6gRMWA
